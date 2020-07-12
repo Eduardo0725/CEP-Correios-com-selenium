@@ -1,0 +1,183 @@
+{
+  "id": "ebdfc083-5ae8-49e8-9878-e9222ff771cc",
+  "version": "2.0",
+  "name": "CEP-Correios",
+  "url": "http://www.buscacep.correios.com.br",
+  "tests": [{
+    "id": "1eb2fb4b-40c6-4103-89aa-bec1dd593331",
+    "name": "Buscar Endereço",
+    "commands": [{
+      "id": "e7be2b1f-a51d-4f5e-b005-b6ab882214c9",
+      "comment": "",
+      "command": "open",
+      "target": "/sistemas/buscacep/buscaCepEndereco.cfm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9c1784a-094a-4153-983d-0506bf01d50e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca71f5d8-5c26-43e7-ae04-84846ed1067b",
+      "comment": "",
+      "command": "click",
+      "target": "name=relaxation",
+      "targets": [
+        ["name=relaxation", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='relaxation']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/span[2]/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8adf3fe0-a162-43da-b1d8-753b937af957",
+      "comment": "",
+      "command": "type",
+      "target": "name=relaxation",
+      "targets": [
+        ["name=relaxation", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='relaxation']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/span[2]/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Avenida Caititu"
+    }, {
+      "id": "407b1e80-476f-47c0-939e-8b52729a78d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn2",
+      "targets": [
+        ["css=.btn2", "css:finder"],
+        ["xpath=//input[@value='Buscar']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3abc719-0d27-4ae3-bbb9-4a81eaa1767f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'08223-000')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c95c45b-faba-4983-9c60-610f0eb3e3a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=tr:nth-child(2) > td:nth-child(4)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(4)", "css:finder"],
+        ["xpath=//td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'08223-000')]", "xpath:innerText"]
+      ],
+      "value": "08223-000"
+    }]
+  }, {
+    "id": "a808cc56-713f-4103-b847-8f6cbe1ca777",
+    "name": "Buscar CEP",
+    "commands": [{
+      "id": "9635b75e-f11e-40c5-8be5-5fce3ed9617d",
+      "comment": "",
+      "command": "open",
+      "target": "/sistemas/buscacep/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a6bbff2-24c8-47d0-970e-8517f323b13f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bce48c68-6f76-4ca6-b6e9-a040fcb7234e",
+      "comment": "",
+      "command": "click",
+      "target": "name=relaxation",
+      "targets": [
+        ["name=relaxation", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='relaxation']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/span[2]/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e23f4e71-dcfe-4994-b732-1f7d9bef5e33",
+      "comment": "",
+      "command": "type",
+      "target": "name=relaxation",
+      "targets": [
+        ["name=relaxation", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='relaxation']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/span[2]/label/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "08223000"
+    }, {
+      "id": "713d63f2-4567-4243-875e-5984a493555c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn2",
+      "targets": [
+        ["css=.btn2", "css:finder"],
+        ["xpath=//input[@value='Buscar']", "xpath:attributes"],
+        ["xpath=//form[@id='Geral']/div/div/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c20d317b-7c1d-4185-8839-6609688ffb6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Avenida Caititu ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7942bc1f-3e4e-4ec4-bb06-547e7ce3fd00",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Avenida Caititu ')]", "xpath:innerText"]
+      ],
+      "value": "Avenida Caititu "
+    }, {
+      "id": "764e9767-1f69-460e-9a45-c90275c46b8f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.column2",
+      "targets": [
+        ["css=.column2", "css:finder"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "194b8888-81a4-4a3b-9521-c8122e77b1f8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1eb2fb4b-40c6-4103-89aa-bec1dd593331"]
+  }],
+  "urls": ["http://www.buscacep.correios.com.br/"],
+  "plugins": []
+}
